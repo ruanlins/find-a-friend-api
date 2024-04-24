@@ -1,0 +1,35 @@
+{
+  "name": "findafriend-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src --out-dir build",
+    "start": "node build/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/express-session": "^1.18.0",
+    "@types/http-errors": "^2.0.4",
+    "@types/morgan": "^1.9.9",
+    "prisma": "^5.12.1",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5",
+    "@types/bcrypt": "^5.0.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.12.1",
+    "@quixo3/prisma-session-store": "^3.1.13",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
+    "zod": "^3.23.3"
+  }
+}
