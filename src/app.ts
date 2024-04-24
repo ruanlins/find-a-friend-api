@@ -7,6 +7,7 @@ import { env } from './env';
 import { PrismaSessionStore } from '@quixo3/prisma-session-store';
 import { PrismaClient } from '@prisma/client';
 import { router as orgsRoutes } from './routes/orgs';
+import { router as petsRoutes } from './routes/pets';
 
 export const app = express();
 
@@ -31,6 +32,7 @@ app.use(
 );
 
 app.use('/orgs', orgsRoutes);
+app.use('/pets', petsRoutes);
 
 app.use((req, res, next) => {
   next(createHttpError(404, 'Endpoint not found'));
